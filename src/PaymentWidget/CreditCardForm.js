@@ -140,6 +140,7 @@ export default function CreditCardForm(props) {
       billing_details: billingDetails,
     });
 
+    console.log(paymentMethod);
     //handle errors, otherwise set the new payment method in state
     if (payload.error) {
       setError(payload.error);
